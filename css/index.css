@@ -48,6 +48,11 @@ header{
     position: relative;
     left: 60vw;
 }
+.cf_img{
+    width: 2.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
 .cf li{
     margin: 0 10px;
 }
@@ -57,7 +62,7 @@ a{
 /* ナビゲーションバーここまで */
 
 /* ヘッダー */
-.p_title{
+#p_title{
     padding: 3rem 0 3rem 0;
     text-align: center;
     background-color: #3498db;
@@ -102,7 +107,8 @@ a{
 }
 #programing_article{
     display: flex;
-    margin-left: 27vw; 
+    /* margin-left: 27vw;  */
+    text-align: center;
 }
 #programming ul{
     padding: 0;
@@ -111,6 +117,7 @@ a{
     list-style: none;
     text-align: center;
 }
+
 .radar-chart-003 {
     display: flex;
     justify-content: center;
@@ -273,6 +280,22 @@ footer{
 
 
 @media screen and (max-width: 480px) {
+.cf{
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+    left: 0vw;
+    padding: 0;
+}
+#about_mid{
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+}
+#about img{
+    width:50%;
+    box-shadow: 0 10px 10px #666666;
+}
 #works ul{
     list-style: none;
     display: grid;
