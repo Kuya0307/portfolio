@@ -109,6 +109,8 @@ a{
     display: flex;
     /* margin-left: 27vw;  */
     text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
 }
 #programming ul{
     padding: 0;
