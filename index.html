@@ -76,12 +76,22 @@
         <ul>
           <li>
             <section id="my_intro">
-              <label for="popup" id="txt_label"
+              <label for="popup" class="txt_label"
                 ><img
                   src="img/自己紹介.png"
                   alt="自己紹介"
-                  onclick="showPopup()"
+                  class="popup-trigger"
               /></label>
+              <div class="overlay"></div>
+              <div class="popup">
+                <h2>MY SELF INTRODUCTION</h2>
+                <p>使用言語:HTML,CSS</p>
+                <p>作成時期:一年次前期</p>
+                <p>
+                  説明:授業の一環として作った自己紹介ページ。HTMLとCSSの難しさを体感することができた。
+                </p>
+                <button class="close-popup">閉じる</button>
+              </div>
               <h3>MY SELF INTRODUCTION</h3>
               <p>自己紹介Webページ(HTML)</p>
             </section>
@@ -124,6 +134,29 @@
           </li>
         </ul>
       </section>
+      <script>
+        // JavaScript
+        document
+          .querySelector(".popup-trigger")
+          .addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "block";
+            document.querySelector(".overlay").style.display = "block";
+          });
+
+        document
+          .querySelector(".close-popup")
+          .addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+            document.querySelector(".overlay").style.display = "none";
+          });
+
+        document
+          .querySelector(".overlay")
+          .addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+            document.querySelector(".overlay").style.display = "none";
+          });
+      </script>
 
       <!-- 使える言語とツール -->
       <section id="programming">
