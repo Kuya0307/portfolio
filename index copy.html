@@ -70,6 +70,7 @@
           </article>
         </section>
       </section>
+
       <!-- 作ってきたもの -->
       <section id="works">
         <h2>WORKS</h2>
@@ -77,11 +78,30 @@
           <li>
             <section id="my_intro">
               <label for="popup" id="txt_label"
-                ><img
-                  src="img/自己紹介.png"
-                  alt="自己紹介"
-                  onclick="showPopup()"
+                ><img src="img/自己紹介.png" alt="自己紹介"
               /></label>
+              <input type="checkbox" id="popup" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>MY SELF INTRODUCTION</h2>
+                    <p>使用言語:HTML,CSS</p>
+                    <p>作成時期:一年次前期</p>
+                    <p>
+                      説明:授業の一環として作った自己紹介ページ。HTMLとCSSの難しさを体感することができた。
+                    </p>
+                  </div>
+                </div>
+              </div>
               <h3>MY SELF INTRODUCTION</h3>
               <p>自己紹介Webページ(HTML)</p>
             </section>
@@ -91,6 +111,28 @@
               <label for="popup2" id="txt_label"
                 ><img src="img/クイズ.png" alt="クイズ"
               /></label>
+              <input type="checkbox" id="popup2" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup2" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup2" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>〇✕△□クイズ</h2>
+                    <p>使用言語:Java,HTML,CSS</p>
+                    <p>作成時期:一年次後期</p>
+                    <p>
+                      説明:以前作成していた〇✕クイズをさらに進化させたアプリケーション。答えを択一ではなく複数選択にしたため、回答を取得することに苦労した。
+                    </p>
+                  </div>
+                </div>
+              </div>
               <h3>〇✕△□クイズ</h3>
               <p>〇と✕だけでなく△と□も含めた四択クイズアプリ(Java)</p>
             </section>
@@ -100,6 +142,28 @@
               <label for="popup3" id="txt_label"
                 ><img src="img/図書管理.png" alt="図書管理"
               /></label>
+              <input type="checkbox" id="popup3" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup3" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup3" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>図書管理システム</h2>
+                    <p>使用言語:Python,HTML,CSS</p>
+                    <p>作成時期:二年次前期</p>
+                    <p>
+                      説明:授業の一環として作った図書管理システム。閲覧・貸出・返却だけでなく、登録や編集など基本的な機能は実装できた。
+                    </p>
+                  </div>
+                </div>
+              </div>
               <h3>図書管理システム</h3>
               <p>書籍の貸出と返却を管理することのできるシステム(Python)</p>
             </section>
@@ -109,6 +173,28 @@
               <label for="popup4" id="txt_label"
                 ><img src="img/偉人打.png" alt="偉人打"
               /></label>
+              <input type="checkbox" id="popup4" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup4" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup4" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>偉人打</h2>
+                    <p>使用言語:Python,HTML,CSS</p>
+                    <p>作成時期:二年次前期</p>
+                    <p>
+                      説明:学校行事のハッカソンで作成したタイピングアプリ。チーム開発で、バックエンドは担当していなかったがフロントエンド部分はほぼ全て作成した。
+                    </p>
+                  </div>
+                </div>
+              </div>
               <h3>偉人打</h3>
               <p>偉人をテーマにしたタイピングゲーム(Python)</p>
             </section>
@@ -118,6 +204,28 @@
               <label for="popup4" id="txt_label"
                 ><img src="img/blockbreak.png" alt="ブロック崩し"
               /></label>
+              <input type="checkbox" id="popup4" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup4" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup4" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>blockbreak</h2>
+                    <p>使用言語:Javascript</p>
+                    <p>作成時期:二年次後期</p>
+                    <p>
+                      説明:授業の一環として作ったブロック崩しゲーム。Phaserというフレームワークを使用して作成した。
+                    </p>
+                  </div>
+                </div>
+              </div>
               <h3>blockbreak</h3>
               <p>宇宙を舞台にしたブロック崩しゲーム(Javascript)</p>
             </section>
