@@ -98,9 +98,19 @@
           </li>
           <li>
             <section id="quiz">
-              <label for="popup2" id="txt_label"
-                ><img src="img/クイズ.png" alt="クイズ"
+              <label for="popup" id="txt_label"
+                ><img src="img/クイズ.png" alt="クイズ" class="popup-trigger"
               /></label>
+              <div class="overlay"></div>
+              <div class="popup">
+                <h2>〇✕△□クイズ</h2>
+                <p>使用言語:Java,HTML,CSS</p>
+                <p>作成時期:一年次前期</p>
+                <p>
+                  説明:以前作成していた〇✕クイズをさらに進化させたアプリケーション。答えを択一ではなく複数選択にしたため、回答を取得することに苦労した。
+                </p>
+                <button class="close-popup">閉じる</button>
+              </div>
               <h3>〇✕△□クイズ</h3>
               <p>〇と✕だけでなく△と□も含めた四択クイズアプリ(Java)</p>
             </section>
@@ -136,26 +146,37 @@
       </section>
       <script>
         // JavaScript
-        document
-          .querySelector(".popup-trigger")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "block";
-            document.querySelector(".overlay").style.display = "block";
+        document.querySelectorAll(".popup-trigger").forEach(function (trigger) {
+          trigger.addEventListener("click", function () {
+            const popup = trigger.closest("section").querySelector(".popup");
+            const overlay = trigger
+              .closest("section")
+              .querySelector(".overlay");
+            popup.style.display = "block";
+            overlay.style.display = "block";
           });
+        });
 
         document
-          .querySelector(".close-popup")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".overlay").style.display = "none";
+          .querySelectorAll(".close-popup")
+          .forEach(function (closeButton) {
+            closeButton.addEventListener("click", function () {
+              const popup = closeButton.closest(".popup");
+              const overlay = closeButton
+                .closest("section")
+                .querySelector(".overlay");
+              popup.style.display = "none";
+              overlay.style.display = "none";
+            });
           });
 
-        document
-          .querySelector(".overlay")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".overlay").style.display = "none";
+        document.querySelectorAll(".overlay").forEach(function (overlay) {
+          overlay.addEventListener("click", function () {
+            const popup = overlay.closest("section").querySelector(".popup");
+            overlay.style.display = "none";
+            popup.style.display = "none";
           });
+        });
       </script>
 
       <!-- 使える言語とツール -->
