@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Noto+Serif+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>織田空陽ポートフォリオ</title>
+  </head>
+  <body id="index">
+    <header>
+      <div id="title_box">
+        <a href="#index" id="aaaa"
+          ><img class="cf_img" src="img/sunsky.png" alt="ポートフォリオのロゴ"
+        /></a>
+        <h1 id="pro_h1">織田空陽の軌跡</h1>
+      </div>
+      <!-- ページ内リンク -->
+      <nav>
+        <ul class="cf">
+          <!-- <li> -->
+          <!-- </li> -->
+          <li class="catch">
+            <a href="#p_title"><span>catch</span></a>
+          </li>
+          <li class="about">
+            <a href="#about"><span>about</span></a>
+          </li>
+          <li class="works">
+            <a href="#works"><span>works</span></a>
+          </li>
+          <li class="programming">
+            <a href="#programming"><span>programming</span></a>
+          </li>
+          <li class="contact">
+            <a href="#contact"><span>contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- タイトル -->
+      <section id="p_title">
+        <h1>Oda's Portfolio</h1>
+        <h5>My footprints.</h5>
+      </section>
+
+      <!-- 自分についての説明 -->
+      <section id="about">
+        <h2>ABOUT</h2>
+        <section id="about_mid">
+          <img src="img/kuya.jpg" alt="自分の写真" />
+          <article>
+            <h3>織田空陽ーーOda Kuya</h3>
+            <p>
+              2004年3月、岩手県出身。商業高校に進みプログラミングの楽しさを知り、
+              専門学校に進学。プログラミングだけでなく、設計のことも学ぶ。
+            </p>
+            <span>GitHub:</span>
+            <a href="https://github.com/Kuya0307"
+              >https://github.com/Kuya0307</a
+            >
+          </article>
+        </section>
+      </section>
+
+      <!-- 作ってきたもの -->
+      <section id="works">
+        <h2>WORKS</h2>
+        <ul>
+          <li>
+            <section id="my_intro">
+              <label for="popup" id="txt_label"
+                ><img src="img/自己紹介.png" alt="自己紹介"
+              /></label>
+              <input type="checkbox" id="popup" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>MY SELF INTRODUCTION</h2>
+                    <p>使用言語:HTML,CSS</p>
+                    <p>作成時期:一年次前期</p>
+                    <p>
+                      説明:授業の一環として作った自己紹介ページ。HTMLとCSSの難しさを体感することができた。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>MY SELF INTRODUCTION</h3>
+              <p>自己紹介Webページ(HTML)</p>
+            </section>
+          </li>
+          <li>
+            <section id="quiz">
+              <label for="popup2" id="txt_label"
+                ><img src="img/クイズ.png" alt="クイズ"
+              /></label>
+              <input type="checkbox" id="popup2" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup2" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup2" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>〇✕△□クイズ</h2>
+                    <p>使用言語:Java,HTML,CSS</p>
+                    <p>作成時期:一年次後期</p>
+                    <p>
+                      説明:以前作成していた〇✕クイズをさらに進化させたアプリケーション。答えを択一ではなく複数選択にしたため、回答を取得することに苦労した。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>〇✕△□クイズ</h3>
+              <p>〇と✕だけでなく△と□も含めた四択クイズアプリ(Java)</p>
+            </section>
+          </li>
+          <li>
+            <section id="book">
+              <label for="popup3" id="txt_label"
+                ><img src="img/図書管理.png" alt="図書管理"
+              /></label>
+              <input type="checkbox" id="popup3" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup3" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup3" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>図書管理システム</h2>
+                    <p>使用言語:Python,HTML,CSS</p>
+                    <p>作成時期:二年次前期</p>
+                    <p>
+                      説明:授業の一環として作った図書管理システム。閲覧・貸出・返却だけでなく、登録や編集など基本的な機能は実装できた。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>図書管理システム</h3>
+              <p>書籍の貸出と返却を管理することのできるシステム(Python)</p>
+            </section>
+          </li>
+          <li>
+            <section id="great">
+              <label for="popup4" id="txt_label"
+                ><img src="img/偉人打.png" alt="偉人打"
+              /></label>
+              <input type="checkbox" id="popup4" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup4" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup4" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>偉人打</h2>
+                    <p>使用言語:Python,HTML,CSS</p>
+                    <p>作成時期:二年次前期</p>
+                    <p>
+                      説明:学校行事のハッカソンで作成したタイピングアプリ。チーム開発で、バックエンドは担当していなかったがフロントエンド部分はほぼ全て作成した。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>偉人打</h3>
+              <p>偉人をテーマにしたタイピングゲーム(Python)</p>
+            </section>
+          </li>
+          <li>
+            <section id="blockbreak">
+              <label for="popup4" id="txt_label"
+                ><img src="img/blockbreak.png" alt="ブロック崩し"
+              /></label>
+              <input type="checkbox" id="popup4" />
+              <!-- ポップアップ部分 -->
+              <div id="overlay">
+                <label for="popup4" id="bg_gray"></label>
+                <!-- ウィンドウの外のグレーの領域 -->
+                <div id="window">
+                  <!-- ウィンドウ部分 -->
+                  <label for="popup4" id="btn_cloth">
+                    <!-- 閉じるボタン -->
+                    <span></span>
+                  </label>
+                  <div id="msg">
+                    <!-- ウィンドウのコンテンツ -->
+                    <h2>blockbreak</h2>
+                    <p>使用言語:Javascript</p>
+                    <p>作成時期:二年次後期</p>
+                    <p>
+                      説明:授業の一環として作ったブロック崩しゲーム。Phaserというフレームワークを使用して作成した。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>blockbreak</h3>
+              <p>宇宙を舞台にしたブロック崩しゲーム(Javascript)</p>
+            </section>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 使える言語とツール -->
+      <section id="programming">
+        <h2>PROGRAMMING & TOOL</h2>
+        <article id="programing_article">
+          <div id="re_pro">
+            <h3>PROGRAMMING</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C言語</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+            </ul>
+
+            <div class="radar-chart-003">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                <g stroke="#dce5eb">
+                  <path d="M 100 100 L 100.0 0.0" />
+                  <path d="M 100 100 L 186.6 50.0" />
+                  <path d="M 100 100 L 186.6 150.0" />
+                  <path d="M 100 100 L 100.0 200.0" />
+                  <path d="M 100 100 L 13.4 150.0" />
+                  <path d="M 100 100 L 13.4 50.0" />
+                </g>
+                <g stroke="#dce5eb" fill="none">
+                  <path
+                    d="M 100.0 0.0 L 186.6 50.0 L 186.6 150.0 L 100.0 200.0 L 13.4 150.0 L 13.4 50.0 L 100.0 0.0"
+                  />
+                  <path
+                    d="M 100.0 16.7 L 172.2 58.3 L 172.2 141.7 L 100.0 183.3 L 27.8 141.7 L 27.8 58.3 L 100.0 16.7"
+                  />
+                  <path
+                    d="M 100.0 33.3 L 157.7 66.7 L 157.7 133.3 L 100.0 166.7 L 42.3 133.3 L 42.3 66.7 L 100.0 33.3"
+                  />
+                  <path
+                    d="M 100.0 50.0 L 143.3 75.0 L 143.3 125.0 L 100.0 150.0 L 56.7 125.0 L 56.7 75.0 L 100.0 50.0"
+                  />
+                  <path
+                    d="M 100.0 66.7 L 128.9 83.3 L 128.9 116.7 L 100.0 133.3 L 71.1 116.7 L 71.1 83.3 L 100.0 66.7"
+                  />
+                  <path
+                    d="M 100.0 83.3 L 114.4 91.7 L 114.4 108.3 L 100.0 116.7 L 85.6 108.3 L 85.6 91.7 L 100.0 83.3"
+                  />
+                </g>
+                <path
+                  d="M 100.0 30.0 L 157.2 67.0 L 121.7 112.5 L 100.0 170.0 L 39.4 135.0 L 56.7 75.0 L 100.0 30.0"
+                  fill="#2589d030"
+                  stroke="#2589d0"
+                />
+                <g fill="#2589d0">
+                  <circle cx="100.0" cy="30.0" r="3" />
+                  <circle cx="157.2" cy="67.0" r="3" />
+                  <circle cx="121.7" cy="112.5" r="3" />
+                  <circle cx="100.0" cy="170.0" r="3" />
+                  <circle cx="39.4" cy="135.0" r="3" />
+                  <circle cx="56.7" cy="75.0" r="3" />
+                </g>
+              </svg>
+              <dl>
+                <div>
+                  <dt>Java</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>Python</dt>
+                  <dd>6.6</dd>
+                </div>
+                <div>
+                  <dt>C言語</dt>
+                  <dd>2.5</dd>
+                </div>
+                <div>
+                  <dt>HTML</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>CSS</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>PHP</dt>
+                  <dd>5.0</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div id="re_pro2">
+            <h3>TOOL</h3>
+            <ul>
+              <li>Excel</li>
+              <li>PowerPoint</li>
+              <li>Photoshop</li>
+              <li>AdobeXD</li>
+              <li>git</li>
+              <li>GitHub</li>
+              <li>Fusion</li>
+            </ul>
+            <div class="radar-chart-004">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                <g stroke="#dce5eb">
+                  <path d="M 100 100 L 100.0 0.0" />
+                  <path d="M 100 100 L 178.2 37.7" />
+                  <path d="M 100 100 L 197.5 122.3" />
+                  <path d="M 100 100 L 143.4 190.1" />
+                  <path d="M 100 100 L 56.6 190.1" />
+                  <path d="M 100 100 L 2.5 122.3" />
+                  <path d="M 100 100 L 21.8 37.7" />
+                </g>
+                <g stroke="#dce5eb" fill="none">
+                  <path
+                    d="M 100.0 0.0 L 178.2 37.7 L 197.5 122.3 L 143.4 190.1 L 56.6 190.1 L 2.5 122.3 L 21.8 37.7 L 100.0 0.0"
+                  />
+                  <path
+                    d="M 100.0 14.3 L 167.0 46.6 L 183.6 119.1 L 137.2 177.2 L 62.8 177.2 L 16.4 119.1 L 33.0 46.6 L 100.0 14.3"
+                  />
+                  <path
+                    d="M 100.0 28.6 L 155.8 55.5 L 169.6 115.9 L 131.0 164.4 L 69.0 164.4 L 30.4 115.9 L 44.2 55.5 L 100.0 28.6"
+                  />
+                  <path
+                    d="M 100.0 42.9 L 144.7 64.4 L 155.7 112.7 L 124.8 151.5 L 75.2 151.5 L 44.3 112.7 L 55.3 64.4 L 100.0 42.9"
+                  />
+                  <path
+                    d="M 100.0 57.1 L 133.5 73.3 L 141.8 109.5 L 118.6 138.6 L 81.4 138.6 L 58.2 109.5 L 66.5 73.3 L 100.0 57.1"
+                  />
+                  <path
+                    d="M 100.0 71.4 L 122.3 82.2 L 127.9 106.4 L 112.4 125.7 L 87.6 125.7 L 72.1 106.4 L 77.7 82.2 L 100.0 71.4"
+                  />
+                  <path
+                    d="M 100.0 85.7 L 111.2 91.1 L 113.9 103.2 L 106.2 112.9 L 93.8 112.9 L 86.1 103.2 L 88.8 91.1 L 100.0 85.7"
+                  />
+                </g>
+                <path
+                  d="M 100.0 30.0 L 154.7 56.4 L 148.7 111.1 L 132.5 167.6 L 69.6 163.1 L 31.8 115.6 L 60.9 68.8 L 100.0 30.0"
+                  fill="#2589d030"
+                  stroke="#2589d0"
+                />
+                <g fill="#2589d0">
+                  <circle cx="100.0" cy="30.0" r="3" />
+                  <circle cx="154.7" cy="56.4" r="3" />
+                  <circle cx="148.7" cy="111.1" r="3" />
+                  <circle cx="132.5" cy="167.6" r="3" />
+                  <circle cx="69.6" cy="163.1" r="3" />
+                  <circle cx="31.8" cy="115.6" r="3" />
+                  <circle cx="60.9" cy="68.8" r="3" />
+                </g>
+              </svg>
+              <dl>
+                <div>
+                  <dt>Excel</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>PowerPoint</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>Photoshop</dt>
+                  <dd>5.0</dd>
+                </div>
+                <div>
+                  <dt>AdobeXD</dt>
+                  <dd>7.5</dd>
+                </div>
+                <div>
+                  <dt>git</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>GitHub</dt>
+                  <dd>7.0</dd>
+                </div>
+                <div>
+                  <dt>Fusion</dt>
+                  <dd>5.0</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 連絡先 -->
+      <section id="contact">
+        <h2>CONTACT</h2>
+        <p>000-0000-000</p>
+        <p>oooooooo@gmail.com</p>
+      </section>
+
+      <footer>&copy; oda</footer>
+    </main>
+  </body>
+</html>
